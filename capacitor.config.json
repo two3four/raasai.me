@@ -1,0 +1,6 @@
+{
+    "appId": "me.raasai.app",
+    "appName": "Raasai",
+    "webDir": "dist",
+    "bundledWebRuntime": false
+}
