@@ -152,15 +152,15 @@ const App = () => {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-red"></span>
                             </span>
-                            A Phone Number for Your Car
+                            One Scan to Reach You Anywhere
                         </div>
                         <h1 className="text-5xl md:text-7xl font-black leading-[1.05] mb-8 tracking-tighter">
-                            NEVER MISS AN<br />
-                            <span className="text-primary-red">IMPORTANT CALL</span><br />
-                            ABOUT YOUR VEHICLE.
+                            NEVER MISS A CALL<br />
+                            <span className="text-primary-red">ABOUT YOUR VEHICLE</span><br />
+                            OR YOUR ESSENTIALS.
                         </h1>
-                        <p className="text-xl text-black/60 mb-10 leading-relaxed max-w-lg">
-                            Let people reach you when they need to, without seeing your phone number. Smart QR sticker + mobile app for ultimate privacy.
+                        <p className="text-xl text-black/60 mb-10 leading-relaxed max-w-lg font-medium">
+                            The premium way to let people reach you when they find your car, luggage, wallet or phone — without ever seeing your number.
                         </p>
                         <div className="flex flex-wrap gap-4 items-center mb-8">
                             <div className="flex items-center gap-2 text-sm font-bold"><Zap size={18} className="text-primary-red" /> One-Time Payment</div>
@@ -416,7 +416,7 @@ const App = () => {
                                 <PhoneCall className="text-primary-red" size={28} />
                                 RAASAI<span className="text-primary-red">.ME</span>
                             </a>
-                            <p className="text-white/40 font-bold mb-8">Connect to vehicle owners privately and securely. No phone numbers exchanged.</p>
+                            <p className="text-white/40 font-bold mb-8">Connect to your vehicles, luggage, and personal belongings privately and securely. No phone numbers exchanged.</p>
                             <div className="space-y-4 text-sm font-bold">
                                 <div className="flex items-center gap-3 text-white/60 hover:text-white cursor-pointer transition-colors">
                                     <Zap size={18} className="text-primary-red" /> Street #2, Officers Colony # 2, Faisalabad
