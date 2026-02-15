@@ -12,79 +12,75 @@ const App = () => {
 
     const navLinks = [
         { name: "Features", href: "#features" },
-        { name: "How It Works", href: "#how-it-works" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "About Us", href: "#about" },
-        { name: "Contact", href: "#contact" }
+        { name: "Global Reach", href: "#how-it-works" },
+        { name: "Get Started", href: "#pricing" },
+        { name: "Our Vision", href: "#about" }
     ];
 
     const features = [
         {
             icon: <Shield size={28} className="text-primary-red" />,
-            title: "Stay Reachable, Stay Private",
-            description: "Your number is never shown to anyone who scans your QR code. Your privacy is our priority."
+            title: "Encrypted Privacy",
+            description: "Connect instantly via our secure gateway. Your personal data and phone number remain shielded from public view."
         },
         {
             icon: <MessageSquare size={28} className="text-primary-red" />,
-            title: "Call or Message",
-            description: "They choose how to contact you — you stay in control of the communication."
+            title: "Dynamic Interaction",
+            description: "Choose your preferred way to be contacted. You maintain total control over every interaction."
         },
         {
             icon: <Smartphone size={28} className="text-primary-red" />,
-            title: "Full App Control",
-            description: "Manage contacts, vehicles, and notifications anytime directly from the mobile app."
+            title: "Smart Command",
+            description: "Manage your digital identity, assets, and notifications in real-time through the intuitive Raasai dashboard."
         },
         {
             icon: <CreditCard size={28} className="text-primary-red" />,
-            title: "One Time Purchase",
-            description: "No subscriptions. No monthly fees. Pay once and use for a lifetime."
+            title: "Lifetime Ownership",
+            description: "A single one-time investment for permanent digital connectivity. No subscriptions, no hidden fees."
         },
         {
             icon: <AlertTriangle size={28} className="text-primary-red" />,
-            title: "Emergency Contacts",
-            description: "Backup contacts get an Emergency Call instantly if you are unreachable."
+            title: "Intelligent Fallback",
+            description: "Our system automatically alerts your emergency contacts if you're unreachable during critical moments."
         },
         {
             icon: <Lock size={28} className="text-primary-red" />,
-            title: "Block and Protect",
-            description: "Block unwanted callers instantly. You decide exactly who can reach you."
+            title: "Active Perimeter",
+            description: "Instantly block unauthorized reach. You define the boundaries of your digital accessibility."
         }
     ];
 
     const comparisonData = [
-        { feature: "Be Reachable", dash: true, card: true, raasai: true },
-        { feature: "Privacy Protected", dash: false, card: false, raasai: true },
-        { feature: "Control Who Contacts You", dash: false, card: false, raasai: true },
-        { feature: "Emergency Alerts", dash: false, card: false, raasai: true },
-        { feature: "Spam Protection", dash: false, card: false, raasai: true },
-        { feature: "Safety for Women", dash: false, card: false, raasai: true },
-        { feature: "Track Contacts", dash: false, card: false, raasai: true },
-    ];
-
-    const familySafety = [
-        {
-            title: "Elderly Parents",
-            description: "Your aging parents deserve to drive with peace of mind. If something happens, help is just a scan away.",
-            icon: <Heart />
-        },
-        {
-            title: "Women Drivers",
-            description: "Stay reachable without sharing your number with strangers. Safety and privacy, together.",
-            icon: <Shield />
-        },
-        {
-            title: "New Drivers",
-            description: "Let your kids be independent on the road, with emergency contacts always ready.",
-            icon: <UserPlus />
-        }
+        { feature: "Instant Reachability", dash: true, card: true, raasai: true },
+        { feature: "Data Encryption", dash: false, card: false, raasai: true },
+        { feature: "Active Access Control", dash: false, card: false, raasai: true },
+        { feature: "Emergency Cascading", dash: false, card: false, raasai: true },
+        { feature: "Spam Mitigation", dash: false, card: false, raasai: true },
+        { feature: "Safety Protocol for Everyone", dash: false, card: false, raasai: true },
+        { feature: "Asset Tracking", dash: false, card: false, raasai: true },
     ];
 
     const faqs = [
-        { q: "What is Raasai?", a: "Raasai is a smart QR-based communication platform that lets people reach vehicle owners or property owners without needing their private phone numbers." },
-        { q: "How does it protect my privacy?", a: "When someone scans your QR code, they are connected through our secure gateway. Your actual phone number is never revealed." },
-        { q: "Is this a one-time purchase or subscription?", a: "Raasai is 100% one-time purchase. No monthly fees, no hidden costs. Pay once, use forever." },
-        { q: "What happens in an emergency?", a: "In Emergency Mode, your secondary/backup contacts are notified instantly, ensuring help is on the way even if you don't answer." },
-        { q: "How long does the sticker last?", a: "Our premium stickers are made with high-quality UV-resistant materials designed to last for years in all weather conditions." }
+        {
+            q: "What defines the Raasai platform?",
+            a: "Raasai is an elite digital bridge designed for the modern world. We provide a secure, QR-powered gateway that facilitates communication without compromising your personal privacy."
+        },
+        {
+            q: "How does the privacy protocol work?",
+            a: "When a Raasai tag is scanned, our system creates a secure, anonymous session. This allows for seamless communication while keeping your physical phone number entirely hidden from the public."
+        },
+        {
+            q: "Are there recurring costs?",
+            a: "Absolutely not. Raasai is built on a lifetime ownership model. Your one-time purchase secures your digital identity and access for life."
+        },
+        {
+            q: "What is the Emergency Fallback system?",
+            a: "If you cannot be reached directly, our platform triggers a cascading notification to your pre-defined emergency network, ensuring critical messages always find a safe destination."
+        },
+        {
+            q: "How resilient are Raasai tags?",
+            a: "Our tags are engineered for extreme durability. Using aerospace-grade UV protection and weatherproofing, they are built to withstand the harshest environments on vehicles or gear."
+        }
     ];
 
     const toggleFaq = (index) => {
@@ -109,10 +105,10 @@ const App = () => {
                             <a key={link.name} href={link.href} className="hover:text-primary-red transition-colors">{link.name}</a>
                         ))}
                         <button className="bg-black text-white px-6 py-2 rounded-full font-bold transition-all hover:bg-primary-red active:scale-95 shadow-lg shadow-black/10">
-                            Become Distributor
+                            Partner with Us
                         </button>
                         <button className="bg-primary-red hover:bg-primary-red-hover text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95 shadow-lg shadow-red-500/20">
-                            Login
+                            Access Portal
                         </button>
                     </div>
 
@@ -133,15 +129,15 @@ const App = () => {
                         {navLinks.map(link => (
                             <a key={link.name} href={link.href} onClick={() => setIsMenuOpen(false)}>{link.name}</a>
                         ))}
-                        <button className="bg-black text-white py-4 rounded-2xl w-full">Become Distributor</button>
-                        <button className="bg-primary-red text-white py-4 rounded-2xl w-full shadow-xl shadow-red-500/20">Login</button>
+                        <button className="bg-black text-white py-4 rounded-2xl w-full">Partner with Us</button>
+                        <button className="bg-primary-red text-white py-4 rounded-2xl w-full">Access Portal</button>
                     </div>
                 </motion.div>
             )}
 
             {/* Hero Section */}
             <section className="pt-48 pb-32 relative overflow-hidden bg-[radial-gradient(circle_at_top,rgba(229,9,20,0.05)_0%,rgba(255,255,255,0)_60%)]">
-                <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -152,56 +148,113 @@ const App = () => {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-red"></span>
                             </span>
-                            One Scan to Reach You Anywhere
+                            Universal Digital Connectivity
                         </div>
-                        <h1 className="text-5xl md:text-7xl font-black leading-[1.05] mb-8 tracking-tighter">
-                            NEVER MISS A CALL<br />
-                            <span className="text-primary-red">ABOUT YOUR VEHICLE</span><br />
-                            OR YOUR ESSENTIALS.
+                        <h1 className="text-5xl md:text-7xl font-black leading-[1.05] mb-8 tracking-tighter uppercase text-black">
+                            ONE SCAN TO <br />
+                            <span className="text-primary-red">PROTECT WHAT</span><br />
+                            MATTERS MOST.
                         </h1>
                         <p className="text-xl text-black/60 mb-10 leading-relaxed max-w-lg font-medium">
-                            The premium way to let people reach you when they find your car, luggage, wallet or phone — without ever seeing your number.
+                            The elite way to stay reachable for your vehicle, essentials, and gear — without ever exposing your private identity. Safe. Instant. Permanent.
                         </p>
-                        <div className="flex flex-wrap gap-4 items-center mb-8">
-                            <div className="flex items-center gap-2 text-sm font-bold"><Zap size={18} className="text-primary-red" /> One-Time Payment</div>
-                            <div className="flex items-center gap-2 text-sm font-bold"><Lock size={18} className="text-primary-red" /> 100% Private</div>
-                            <div className="flex items-center gap-2 text-sm font-bold"><Smartphone size={18} className="text-primary-red" /> Smart App Control</div>
-                        </div>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <button className="bg-primary-red hover:bg-primary-red-hover text-white px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 transition-all hover:shadow-2xl hover:shadow-red-500/40 hover:-translate-y-1">
-                                Get Your Raasai Tag <ArrowRight size={22} />
+                                Secure Your Raasai Kit <ArrowRight size={22} />
                             </button>
                             <button className="bg-black text-white px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 transition-all hover:bg-zinc-800 hover:-translate-y-1">
-                                <Users size={22} /> Distributor Program
+                                <Users size={22} /> Commercial Program
                             </button>
                         </div>
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
+                        initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1 }}
                         className="relative"
                     >
-                        <div className="aspect-square bg-gradient-to-br from-gray-50 to-white rounded-[60px] border border-black/5 shadow-3xl flex items-center justify-center p-12">
-                            <div className="w-full h-full border-4 border-black/5 rounded-[40px] flex items-center justify-center relative bg-white">
-                                <QrCode size={240} strokeWidth={1} className="text-black/80" />
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl shadow-xl">
-                                    <PhoneCall className="text-primary-red" size={40} />
+                        {/* Premium CSS Sticker Mockup */}
+                        <div className="w-full aspect-[16/10] bg-white rounded-[40px] shadow-3xl border border-black/5 p-2 relative group overflow-hidden">
+                            <div className="w-full h-full bg-white rounded-[32px] border-4 border-black/5 flex overflow-hidden relative">
+                                {/* Left Content */}
+                                <div className="flex-1 p-8 flex flex-col justify-between items-start">
+                                    <div className="text-black font-black italic text-3xl tracking-tighter">
+                                        RAASAI<span className="text-primary-red">.ME</span>
+                                    </div>
+                                    <div className="w-full flex flex-col items-start gap-2">
+                                        <div className="text-primary-red"><PhoneCall size={64} className="animate-ring" /></div>
+                                        <div className="text-black font-black text-4xl leading-none uppercase tracking-tighter">
+                                            SCAN TO <br /> REACH OWNER
+                                        </div>
+                                    </div>
+                                    <div className="bg-black text-white px-4 py-1.5 rounded-lg text-xs font-black tracking-widest uppercase">
+                                        ID: RS-159563
+                                    </div>
+                                </div>
+                                {/* Right QR Area */}
+                                <div className="w-2/5 h-full bg-white border-l-4 border-black/5 flex items-center justify-center p-8 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.02)_0%,rgba(255,255,255,0)_100%)]">
+                                    <div className="w-full aspect-square border-2 border-black/10 rounded-2xl p-4 flex items-center justify-center relative">
+                                        <QrCode size={160} strokeWidth={1} />
+                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-2 rounded-lg shadow-md border border-black/5">
+                                            <PhoneCall className="text-primary-red" size={24} />
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* Security Strip */}
+                                <div className="absolute top-0 left-0 w-full h-2 bg-primary-red" />
+                                <div className="absolute bottom-0 left-0 w-full h-12 bg-gray-50 flex items-center px-8 justify-between border-t border-black/5">
+                                    <div className="text-[10px] font-black uppercase tracking-widest text-black/30">Universal Digital Safety Tag</div>
+                                    <div className="flex gap-4">
+                                        <AlertTriangle size={16} className="text-primary-red/40" />
+                                        <Shield size={16} className="text-primary-red/40" />
+                                        <Bell size={16} className="text-primary-red/40" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        {/* Status floating card */}
-                        <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-2xl border border-black/5 max-w-[240px]">
-                            <div className="flex items-center gap-3 mb-2">
-                                <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-500">
-                                    <PhoneCall size={20} />
-                                </div>
-                                <div className="font-black text-sm">Incoming Alert</div>
-                            </div>
-                            <p className="text-xs text-black/40 font-bold">Vehicle: Honda Civic (ABC-123)<br />Action: Parking Issue</p>
-                        </div>
+                        {/* Decorative floating elements */}
+                        <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary-red/5 blur-[80px] rounded-full" />
+                        <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-black/5 blur-[80px] rounded-full" />
                     </motion.div>
+                </div>
+            </section>
+
+            {/* Use Cases Section */}
+            <section id="how-it-works" className="py-32 border-y border-black/5 bg-white">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="text-center mb-24">
+                        <h2 className="text-3xl md:text-6xl font-black tracking-tighter mb-4 uppercase">Universal Scope</h2>
+                        <p className="text-xl text-black/40 font-bold max-w-2xl mx-auto uppercase tracking-widest">Connect everything you own.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        {[
+                            { icon: <Car />, title: "Automotive", items: ["Luxury Vehicles", "Motorcycles", "Fleets"] },
+                            { icon: <Briefcase />, title: "Travel Gear", items: ["Laptops", "Luggage", "Bags"] },
+                            { icon: <Wallet />, title: "Essentials", items: ["Wallets", "Phones", "Keys"] },
+                            { icon: <Zap />, title: "Lifestyle", items: ["Bicycles", "Office", "Gear"] }
+                        ].map((useCase, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1 }}
+                                className="p-8 rounded-[40px] bg-gray-50/50 border border-black/5 text-center flex flex-col items-center group hover:bg-white hover:shadow-2xl hover:shadow-black/5 transition-all"
+                            >
+                                <div className="p-6 rounded-3xl bg-white shadow-xl shadow-black/5 text-primary-red mb-8 group-hover:scale-110 transition-transform">
+                                    {useCase.icon}
+                                </div>
+                                <h3 className="text-2xl font-black mb-6 tracking-tighter uppercase">{useCase.title}</h3>
+                                <ul className="text-black/40 space-y-3 font-bold text-sm tracking-wide">
+                                    {useCase.items.map((item, i) => (
+                                        <li key={i}>{item}</li>
+                                    ))}
+                                </ul>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -209,8 +262,8 @@ const App = () => {
             <section id="features" className="py-32 bg-gray-50/50">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-6xl font-black tracking-tighter mb-4">Everything You Need</h2>
-                        <p className="text-xl text-black/40 font-bold">Powerful features designed to keep you safe and connected.</p>
+                        <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-4 uppercase">Safety Logic</h2>
+                        <p className="text-xl text-black/40 font-bold uppercase tracking-widest">Proprietary connectivity features.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {features.map((feature, index) => (
@@ -222,7 +275,7 @@ const App = () => {
                                 <div className="mb-8 p-5 rounded-3xl bg-gray-50 text-black w-fit group-hover:bg-primary-red group-hover:text-white transition-all shadow-inner">
                                     {feature.icon}
                                 </div>
-                                <h3 className="text-2xl font-black mb-4 tracking-tight">{feature.title}</h3>
+                                <h3 className="text-2xl font-black mb-4 tracking-tight uppercase">{feature.title}</h3>
                                 <p className="text-black/50 leading-relaxed font-bold text-sm tracking-wide">{feature.description}</p>
                             </motion.div>
                         ))}
@@ -234,108 +287,31 @@ const App = () => {
             <section className="py-32 bg-white">
                 <div className="max-w-5xl mx-auto px-6">
                     <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-6xl font-black tracking-tighter mb-4">Why RAASAI Is Better</h2>
-                        <p className="text-xl text-black/40 font-bold">See how RAASAI compares to traditional methods.</p>
+                        <h2 className="text-4xl md:text-7xl font-black italic uppercase tracking-tighter">PROTOCOL CHOICE</h2>
                     </div>
 
-                    <div className="overflow-x-auto">
-                        <table className="w-full border-separate border-spacing-y-4">
+                    <div className="overflow-x-auto rounded-[40px] border border-black/5">
+                        <table className="w-full border-collapse">
                             <thead>
-                                <tr className="text-left text-xs font-black uppercase tracking-[0.2em] text-black/40">
-                                    <th className="px-6 py-4">Features</th>
-                                    <th className="px-6 py-4 text-center">Dashboard No.</th>
-                                    <th className="px-6 py-4 text-center">Business Card</th>
-                                    <th className="px-6 py-4 text-center text-primary-red">RAASAI.ME</th>
+                                <tr className="text-left text-xs font-black uppercase tracking-[0.2em] text-black/40 bg-gray-50 border-b border-black/5">
+                                    <th className="px-8 py-6">Digital Connectivity</th>
+                                    <th className="px-8 py-6 text-center">Open Number</th>
+                                    <th className="px-8 py-6 text-center">Static Tag</th>
+                                    <th className="px-8 py-6 text-center text-primary-red">RAASAI PROTOCOL</th>
                                 </tr>
                             </thead>
                             <tbody className="font-bold">
                                 {comparisonData.map((row, i) => (
-                                    <tr key={i} className="bg-gray-50/50 rounded-2xl overflow-hidden hover:bg-gray-50 transition-colors">
-                                        <td className="px-6 py-6 rounded-l-2xl border-y border-l border-black/[0.03]">{row.feature}</td>
-                                        <td className="px-6 py-6 text-center border-y border-black/[0.03]">{row.dash ? "✅" : "❌"}</td>
-                                        <td className="px-6 py-6 text-center border-y border-black/[0.03]">{row.card ? "✅" : "❌"}</td>
-                                        <td className="px-6 py-6 text-center text-primary-red rounded-r-2xl border-y border-r border-black/[0.03]">✅</td>
+                                    <tr key={i} className="hover:bg-gray-50/50 transition-colors border-b border-black/[0.03]">
+                                        <td className="px-8 py-6">{row.feature}</td>
+                                        <td className="px-8 py-6 text-center opacity-30">{row.dash ? "✅" : "❌"}</td>
+                                        <td className="px-8 py-6 text-center opacity-30">{row.card ? "✅" : "❌"}</td>
+                                        <td className="px-8 py-6 text-center text-primary-red text-xl">✅</td>
                                     </tr>
                                 ))}
-                                <tr className="bg-black text-white">
-                                    <td className="px-6 py-8 rounded-l-3xl border-y border-l border-black/10">Cost Analysis</td>
-                                    <td className="px-6 py-8 text-center text-sm border-y border-black/10 opacity-60">Free<br />But Dangerous</td>
-                                    <td className="px-6 py-8 text-center text-sm border-y border-black/10 opacity-60">Rs. 50<br />But Risky</td>
-                                    <td className="px-6 py-8 text-center text-primary-red text-xl font-black rounded-r-3xl border-y border-r border-black/10">Rs. 1500<br /><span className="text-[10px] uppercase tracking-widest text-white">One-Time</span></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
-                </div>
-            </section>
-
-            {/* Emergency Mode */}
-            <section className="py-32 bg-black text-white relative overflow-hidden">
-                <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
-                    <div>
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-red/20 text-primary-red rounded-full text-xs font-black uppercase tracking-widest mb-8">
-                            <AlertTriangle size={14} /> Emergency Mode
-                        </div>
-                        <h2 className="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tighter">
-                            WHEN EVERY<br /> SECOND COUNTS.
-                        </h2>
-                        <p className="text-xl text-white/40 mb-12 leading-relaxed">
-                            Full control at your fingertips. Toggle your availability — all from our RAASAI mobile app. When emergency is tapped, everyone on your list is notified.
-                        </p>
-                        <div className="grid grid-cols-2 gap-6">
-                            {[
-                                { label: "Scan", sub: "QR Code Scanned", icon: <QrCode /> },
-                                { label: "Emergency", sub: "Emergency Tapped", icon: <AlertTriangle /> },
-                                { label: "Contacts", sub: "Family Notified", icon: <Users /> },
-                                { label: "Helplines", sub: "Quick Dial Access", icon: <PhoneCall /> }
-                            ].map((item, i) => (
-                                <div key={i} className="p-6 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
-                                    <div className="text-primary-red mb-4">{item.icon}</div>
-                                    <div className="font-black text-lg mb-1">{item.label}</div>
-                                    <div className="text-xs text-white/40 uppercase font-black tracking-widest">{item.sub}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="relative flex justify-center">
-                        <div className="w-[300px] h-[600px] bg-zinc-900 rounded-[50px] border-[8px] border-zinc-800 shadow-3xl relative p-6 overflow-hidden">
-                            <div className="w-full h-full bg-primary-red rounded-[32px] flex flex-col items-center justify-center text-center p-8">
-                                <AlertTriangle size={80} className="mb-6 animate-pulse" />
-                                <h3 className="text-3xl font-black mb-4">EMERGENCY<br />ALERT</h3>
-                                <p className="text-sm font-bold opacity-80 mb-8">Notifying your secondary contacts now...</p>
-                                <div className="w-full h-12 bg-white/20 rounded-xl flex items-center justify-center font-black animate-pulse">STOP ALERT</div>
-                            </div>
-                        </div>
-                        {/* Shadow/glow */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary-red/20 blur-[100px] -z-10 rounded-full" />
-                    </div>
-                </div>
-            </section>
-
-            {/* Family Safety */}
-            <section className="py-32 bg-white text-center">
-                <div className="max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl md:text-6xl font-black tracking-tighter mb-4">Protect Everyone</h2>
-                    <p className="text-xl text-black/40 font-bold mb-20">See how Raasai compares to traditional methods of sharing your contact.</p>
-
-                    <div className="grid md:grid-cols-3 gap-12">
-                        {familySafety.map((item, i) => (
-                            <motion.div
-                                key={i}
-                                whileHover={{ scale: 1.02 }}
-                                className="p-10 rounded-[40px] border border-black/5 bg-gray-50/50 text-center"
-                            >
-                                <div className="inline-flex p-6 bg-white rounded-3xl shadow-xl shadow-black/5 text-primary-red mb-8">
-                                    {item.icon}
-                                </div>
-                                <h3 className="text-2xl font-black mb-4 tracking-tighter">{item.title}</h3>
-                                <p className="text-black/50 leading-relaxed font-bold text-sm">{item.description}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                    <button className="mt-20 bg-black text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-primary-red transition-all shadow-xl shadow-black/10">
-                        Protect Your Family
-                    </button>
                 </div>
             </section>
 
@@ -343,19 +319,20 @@ const App = () => {
             <section id="pricing" className="py-32 bg-gray-50/50">
                 <div className="max-w-4xl mx-auto px-6">
                     <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-6xl font-black tracking-tighter mb-4">One Price. Forever Yours.</h2>
-                        <p className="text-xl text-black/40 font-bold">No hidden fees. No subscriptions. Pay once, use forever.</p>
+                        <h2 className="text-4xl md:text-7xl font-black tracking-tighter mb-4 uppercase">LIFETIME ACCESS</h2>
+                        <p className="text-xl text-black/40 font-bold uppercase tracking-widest italic">Secured Asset Connectivity</p>
                     </div>
 
-                    <div className="p-12 md:p-20 rounded-[60px] bg-white border border-black/5 shadow-3xl relative overflow-hidden text-center">
+                    <div className="p-12 md:p-20 rounded-[60px] bg-white border border-black/5 shadow-3xl relative overflow-hidden text-center group">
+                        <div className="absolute top-0 left-0 w-full h-2 bg-primary-red" />
                         <div className="relative z-10">
-                            <div className="text-primary-red font-black text-6xl md:text-8xl mb-4 tracking-tighter">Rs. 1500</div>
-                            <div className="text-black/40 text-sm font-black uppercase tracking-[0.2em] mb-12">One-time Purchase • Lifetime Access</div>
+                            <div className="text-primary-red font-black text-6xl md:text-9xl mb-4 tracking-tighter">Rs. 1500</div>
+                            <div className="text-black font-black text-sm uppercase tracking-[0.3em] mb-12">Universal License • No Expiry</div>
 
-                            <div className="grid md:grid-cols-2 gap-6 text-left max-w-xl mx-auto mb-16">
-                                {["1x Premium QR Sticker", "Lifetime App Access", "Unlimited Scans", "Emergency Mode", "Spam Protection", "Family Safety Pack"].map((item, i) => (
-                                    <div key={i} className="flex items-center gap-3 font-bold">
-                                        <div className="w-6 h-6 rounded-full bg-primary-red/10 flex items-center justify-center text-primary-red">
+                            <div className="grid md:grid-cols-2 gap-8 text-left max-w-xl mx-auto mb-16">
+                                {["Universal Digital Tag", "Secure Access Gateway", "Fallback Emergency System", "Encryption Layers", "Universal Compatibility", "Elite Support"].map((item, i) => (
+                                    <div key={i} className="flex items-center gap-4 font-black text-sm uppercase tracking-tighter">
+                                        <div className="w-8 h-8 rounded-2xl bg-primary-red text-white flex items-center justify-center">
                                             <Zap size={14} className="fill-current" />
                                         </div>
                                         {item}
@@ -363,20 +340,9 @@ const App = () => {
                                 ))}
                             </div>
 
-                            <button className="w-full bg-primary-red hover:bg-primary-red-hover text-white py-6 rounded-3xl font-black text-2xl transition-all shadow-2xl shadow-red-500/40 hover:-translate-y-1 mb-6">
-                                Order Now
+                            <button className="w-full bg-primary-red hover:bg-primary-red-hover text-white py-6 rounded-3xl font-black text-2xl transition-all shadow-2xl shadow-red-500/40 hover:-translate-y-1">
+                                Secure This Asset
                             </button>
-                            <p className="text-sm text-black/40 font-bold uppercase tracking-widest">Works For One Car. Buy More For Additional Vehicles.</p>
-
-                            <div className="mt-12 p-6 bg-red-50 rounded-3xl inline-flex flex-col items-center">
-                                <div className="text-primary-red font-black text-lg mb-2 flex items-center gap-2 animate-pulse">
-                                    <AlertTriangle size={20} /> Launch Price Ending Soon
-                                </div>
-                                <div className="text-xs font-bold text-black/40 uppercase tracking-widest">
-                                    After 10,000 Tags, Price Increases By Rs. 1000.<br />
-                                    ONLY <span className="text-black font-black">3,247</span> TAGS LEFT
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -384,20 +350,23 @@ const App = () => {
 
             {/* FAQ Section */}
             <section className="py-32 bg-white">
-                <div className="max-w-3xl mx-auto px-6">
-                    <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-16 text-center">Frequently Asked Questions</h2>
-                    <div className="space-y-4">
+                <div className="max-w-4xl mx-auto px-6">
+                    <div className="text-center mb-24">
+                        <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase mb-4">Core Knowledge</h2>
+                        <p className="text-sm font-black uppercase tracking-[0.4em] text-black/20 italic">Common protocol inquiries</p>
+                    </div>
+                    <div className="grid gap-6">
                         {faqs.map((faq, i) => (
-                            <div key={i} className="rounded-3xl border border-black/5 overflow-hidden">
+                            <div key={i} className="rounded-[40px] border border-black/5 overflow-hidden transition-all group">
                                 <button
                                     onClick={() => toggleFaq(i)}
-                                    className="w-full p-8 flex items-center justify-between text-left hover:bg-gray-50 transition-colors font-black text-lg"
+                                    className={`w-full p-10 flex items-center justify-between text-left transition-all font-black text-xl uppercase tracking-tighter ${openFaq === i ? 'bg-black text-white' : 'hover:bg-gray-50'}`}
                                 >
                                     {faq.q}
                                     <ChevronDown className={`transition-transform duration-500 ${openFaq === i ? 'rotate-180' : ''}`} />
                                 </button>
                                 {openFaq === i && (
-                                    <div className="p-8 pt-0 text-black/50 font-bold leading-relaxed">
+                                    <div className="p-10 text-black/60 font-medium text-lg leading-relaxed bg-white border-t border-black/5 italic">
                                         {faq.a}
                                     </div>
                                 )}
@@ -408,65 +377,44 @@ const App = () => {
             </section>
 
             {/* Footer */}
-            <footer className="pt-32 pb-16 bg-black text-white">
+            <footer id="about" className="pt-32 pb-16 bg-black text-white">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
                         <div>
-                            <a href="#" className="flex items-center gap-3 text-2xl font-black italic tracking-tighter mb-8">
-                                <PhoneCall className="text-primary-red" size={28} />
+                            <a href="#" className="flex items-center gap-3 text-3xl font-black italic tracking-tighter mb-8">
+                                <PhoneCall className="text-primary-red" size={32} />
                                 RAASAI<span className="text-primary-red">.ME</span>
                             </a>
-                            <p className="text-white/40 font-bold mb-8">Connect to your vehicles, luggage, and personal belongings privately and securely. No phone numbers exchanged.</p>
-                            <div className="space-y-4 text-sm font-bold">
-                                <div className="flex items-center gap-3 text-white/60 hover:text-white cursor-pointer transition-colors">
-                                    <Zap size={18} className="text-primary-red" /> Street #2, Officers Colony # 2, Faisalabad
-                                </div>
-                                <div className="flex items-center gap-3 text-white/60 hover:text-white cursor-pointer transition-colors">
-                                    <PhoneCall size={18} className="text-primary-red" /> +92 317 8844444
-                                </div>
+                            <p className="text-white/40 font-bold mb-10 leading-relaxed italic">
+                                Elite digital connectivity for automotive and personal essentials. Universal. Secure. Private.
+                            </p>
+                            <div className="space-y-6 text-xs font-black tracking-widest uppercase">
+                                <div className="flex items-center gap-4 text-white/40">Faisalabad, Pakistan</div>
+                                <div className="flex items-center gap-4 text-white/40">+92 317 8844444</div>
                             </div>
                         </div>
 
-                        <div>
-                            <h4 className="font-black text-lg mb-8 uppercase tracking-[0.2em] text-primary-red">Product</h4>
-                            <ul className="space-y-4 font-bold text-white/40">
-                                <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">How It Works</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Mobile App</a></li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h4 className="font-black text-lg mb-8 uppercase tracking-[0.2em] text-primary-red">Company</h4>
-                            <ul className="space-y-4 font-bold text-white/40">
-                                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Safety Guide</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Distributor Program</a></li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h4 className="font-black text-lg mb-8 uppercase tracking-[0.2em] text-primary-red">Support</h4>
-                            <ul className="space-y-4 font-bold text-white/40">
-                                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Shipping Policy</a></li>
-                                <li><a href="#" className="hover:text-white transition-colors">Return Policy</a></li>
-                            </ul>
-                        </div>
+                        {[
+                            { title: "Gateway", links: ["Features", "Use Cases", "Pricing"] },
+                            { title: "Company", links: ["Our Vision", "Contact Center", "Partners"] },
+                            { title: "Privacy", links: ["Core Policy", "Terms", "Security"] }
+                        ].map((col, i) => (
+                            <div key={i}>
+                                <h4 className="font-black text-xs mb-10 uppercase tracking-widest text-primary-red">{col.title}</h4>
+                                <ul className="space-y-6 font-black text-white/40 uppercase text-xs tracking-widest">
+                                    {col.links.map(link => (
+                                        <li key={link}><a href="#" className="hover:text-primary-red transition-colors">{link}</a></li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
 
-                    <div className="pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-                        <p className="text-white/20 text-xs font-black uppercase tracking-widest">© 2026 RAASAI.ME. All rights reserved.</p>
-                        <div className="flex gap-6">
-                            <div className="bg-white/5 hover:bg-white/10 px-6 py-2 rounded-xl text-sm font-bold items-center gap-2 flex transition-all cursor-pointer">
-                                <Smartphone size={18} /> App Store
-                            </div>
-                            <div className="bg-white/5 hover:bg-white/10 px-6 py-2 rounded-xl text-sm font-bold items-center gap-2 flex transition-all cursor-pointer">
-                                <Smartphone size={18} /> Play Store
-                            </div>
+                    <div className="pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
+                        <p className="text-white/20 text-[10px] font-black uppercase tracking-widest">© 2026 RAASAI CONNECTIVITY PROTOCOL. ALL RIGHTS RESERVED.</p>
+                        <div className="flex gap-4">
+                            <div className="bg-white/5 px-8 py-4 rounded-2xl text-[10px] font-black uppercase tracking-widest cursor-pointer">App Store</div>
+                            <div className="bg-white/5 px-8 py-4 rounded-2xl text-[10px] font-black uppercase tracking-widest cursor-pointer">Play Store</div>
                         </div>
                     </div>
                 </div>
